@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bill Splitter</title>
+</head>
+
+<body>
+
+    <div class="curved-div">
+        <h1>ContriCal</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+            <path fill="#ffd700" fill-opacity="1"
+                d="M0,96L48,117.3C96,139,192,181,288,165.3C384,149,480,75,576,48C672,21,768,43,864,74.7C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+        </svg>
+    </div>
+    <div class="container">
+        <center>
+            <input type="number" id="amount" placeholder="Enter the total amount: " required><br><br>
+            <input type="number" id="people" placeholder="No.of people " required><br><br>
+            <input type="number" id="tip" placeholder="Tip amount  ">
+            <a href="#contribution"><button type="submit" id="submit" onclick="calculateContribution()">Split the
+                    Bill</button></a><br><br>
+        </center>
+        <center>
+            <div style="border-radius: 10px;width: 75%;
+        box-shadow: 0 15px 25px rgba(0,0,0,0.15); padding-top: 10vh; padding-bottom: 10vh;">
+                <label for="head" style="font-weight: bolder; font-size: 1rem;margin-top: 40px;">Per Head
+                    Contribution </label><br><br><br>
+                <label for="value" id="contribution"></label>
+        </center>
+    </div>
+    </div>
+</body>
+<script src="App.js"></script>
+
+</html>
