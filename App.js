@@ -7,5 +7,5 @@ function calculateContribution(){
     var total = (amount+tip);
     var result = total/people;
 
-    document.getElementById("contribution").innerHTML="Rs. "+result;
+    document.getElementById("contribution").innerHTML="Rs. "+result.toFixed(2);
 }
